@@ -1,0 +1,72 @@
+/*CSS from Cortona3DSolo*/
+.tiramisu-proc-item-content {
+    display: table-cell;
+    width: 100%;
+    cursor: default;
+}
+
+.tiramisu-proc-item-number {
+    display: table-cell;
+    width: 24px;
+    padding-right: 6pt;
+    cursor: default;
+    font-size: 13px;
+}
+
+.tiramisu-proc-item-content {
+    display: table-cell;
+    width: 100%;
+    cursor: default;
+}
+
+.tiramisu-proc-item, .tiramisu-proc-title {
+    display: block;
+    padding: 4px;
+    margin-bottom: 2px;
+    cursor: default;
+}
+
+/* For steps*/
+
+.steps > .tiramisu-proc-item-content {
+    display: flex;
+    width: 100%;
+    cursor: default;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.steps > .tiramisu-proc-item-number {
+    display: flex;
+    width: 24px;
+    padding-right: 6pt;
+    cursor: default;
+}
+
+.steps > .tiramisu-proc-item, .steps > .tiramisu-proc-title {
+    display: flex;
+    padding: 4px;
+    margin-bottom: 2px;
+    cursor: default;
+}
+
+/* End for steps*/
+
+
+
+/*END*/
+svg#solo-svg, #solo-canvas-holder {
+    display: none;
+}
+
+#solo-img {
+    position: absolute;
+    width: 100%;
+    top: 3%;
+    height: 97%;
+}
+
+img#solo-img {
+    width: auto !important;
+    max-width: 100%;
+}

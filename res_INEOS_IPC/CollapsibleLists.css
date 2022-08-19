@@ -1,0 +1,90 @@
+/*Pyda 20180601 Last updated*/
+
+ul.collapsibleList {
+    padding-left: 10mm;
+}
+
+.collapsibleList li {
+    list-style-image: url('button.png') !important;
+    cursor: auto;
+    display: list-item !important;
+    text-indent: 0px;
+}
+
+.collapsibleList li::before {
+    content: no-close-quote;
+    width: 5mm !important;
+}
+
+li.collapsibleListOpen {
+    list-style-image: url('button-open.png') !important;
+    cursor: pointer;
+}
+
+li.collapsibleListClosed {
+    list-style-image: url('button-closed.png') !important;
+    cursor: pointer;
+}
+
+.nodisplay {
+    display: none;
+}
+
+@media screen {
+    #navigation_fly {
+        position: absolute;
+        overflow: auto;
+        left: 55px;
+        top: 1em;
+        background: #21608D;
+        padding: 0.5em;
+        border: none;
+        z-index: 999;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        width: 25%;
+        height: 795px;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+#menu_bar {
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+    z-index: 999;
+}
+
+div.ipc_menu_bar {
+    height: 2.5em;
+}
+
+div.app-panel > div[data-class~='topic/topic'] {
+    padding-left: 2.5em;
+}
+
+/*Hightlight current list Pyda 20180524*/
+#list-highlight {
+    color: green;
+}
+
+button#home {
+    position: absolute;
+    margin-left: 2em;
+}
+
+#searchBox {
+    margin: 2em;
+    text-align: right;
+}
+
+#searchResults {
+    max-height: 350px;
+    overflow-y: auto;
+    min-height: 100px;
+}
+
+a.link {
+    color: white !important;
+    text-decoration: none;
+}

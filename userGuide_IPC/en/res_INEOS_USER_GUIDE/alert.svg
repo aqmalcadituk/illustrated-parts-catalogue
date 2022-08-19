@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="27.633mm"
+     height="24.718mm" viewBox="0 0 104.438 93.4217" fill="none" fill-rule="evenodd" stroke-miterlimit="5">
+    <title>Untitled</title>
+    <desc>"Generator:ParallelGraphics Cortona2D","ProfileId:WebCGM""ProfileEd:2.1""ColourClass:colour""Source:Cortona2D
+        Editor""Date:20160512"
+    </desc>
+    <defs/>
+    <g id="AUTOID_009" name="" type="grnode">
+        <g id="AUTOID_008" name="" type="grnode">
+            <g transform="matrix(3.79985,0,0,3.79985,-0,93.962)">
+                <path fill="#ff0" d="M13.59,-18.941 L4.2649,-2.4755 23.368,-2.2262 Z"/>
+            </g>
+            <g id="AUTOID_007" name="" type="grnode">
+                <g transform="matrix(3.79985,0,0,3.79985,-0,93.962)" stroke-width="1.8802" stroke-linecap="round"
+                   stroke-linejoin="round">
+                    <path stroke="#000" d="M1.8771,-0.9401 L13.816,-21.973 25.756,-0.9401 1.8771,-0.9401"/>
+                    <path stroke="#000" stroke-width="0.9401"
+                          d="M1.8771,-0.9401 L13.816,-21.973 25.756,-0.9401 1.8771,-0.9401"/>
+                </g>
+            </g>
+            <g id="AUTOID_005" name="" type="grnode">
+                <g transform="matrix(3.79985,0,0,3.79985,-0,93.962)" stroke-width="1.5186" stroke-linecap="round"
+                   stroke-linejoin="round">
+                    <path stroke="#ff0" d="M4.1732,-2.2262 L13.816,-19.584 23.459,-2.2262 4.1732,-2.2262"/>
+                    <path stroke="#ff0" stroke-width="0.75929"
+                          d="M4.1732,-2.2262 L13.816,-19.584 23.459,-2.2262 4.1732,-2.2262"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(21.273,0,0,21.2731,40.1647,79.6972)">
+            <text font-family="Angsana New" font-size="5.28" x="0" y="0" fill="#000">!</text>
+        </g>
+    </g>
+</svg>

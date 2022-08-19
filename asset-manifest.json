@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f07ecd74.chunk.css",
+    "main.js": "./static/js/main.f22c9839.chunk.js",
+    "main.js.map": "./static/js/main.f22c9839.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.fbdc74be.js",
+    "runtime-main.js.map": "./static/js/runtime-main.fbdc74be.js.map",
+    "static/css/2.92224fd0.chunk.css": "./static/css/2.92224fd0.chunk.css",
+    "static/js/2.f83f761e.chunk.js": "./static/js/2.f83f761e.chunk.js",
+    "static/js/2.f83f761e.chunk.js.map": "./static/js/2.f83f761e.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.d15cf30d6d4b0570e4cae1e68b26cb93.js": "./precache-manifest.d15cf30d6d4b0570e4cae1e68b26cb93.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.92224fd0.chunk.css.map": "./static/css/2.92224fd0.chunk.css.map",
+    "static/css/main.f07ecd74.chunk.css.map": "./static/css/main.f07ecd74.chunk.css.map",
+    "static/js/2.f83f761e.chunk.js.LICENSE.txt": "./static/js/2.f83f761e.chunk.js.LICENSE.txt",
+    "static/media/3d.svg": "./static/media/3d.f91fa511.svg",
+    "static/media/Back_View.svg": "./static/media/Back_View.32639160.svg",
+    "static/media/Bottom_View.svg": "./static/media/Bottom_View.f88fa5aa.svg",
+    "static/media/Front_View.svg": "./static/media/Front_View.651d046e.svg",
+    "static/media/INEOS-Automotive-Logo.svg": "./static/media/INEOS-Automotive-Logo.07339fc1.svg",
+    "static/media/Ineos-Automotive-logo.png": "./static/media/Ineos-Automotive-logo.c09416eb.png",
+    "static/media/Left_Side_View.svg": "./static/media/Left_Side_View.0c63f824.svg",
+    "static/media/Right_Side_View.svg": "./static/media/Right_Side_View.f2bda3ba.svg",
+    "static/media/Top_View.svg": "./static/media/Top_View.b6e67674.svg",
+    "static/media/aim.svg": "./static/media/aim.7f15d138.svg",
+    "static/media/cartesian.svg": "./static/media/cartesian.638e7fee.svg",
+    "static/media/cube.svg": "./static/media/cube.65684830.svg",
+    "static/media/fullscreen.svg": "./static/media/fullscreen.98318b51.svg",
+    "static/media/objectalignment.svg": "./static/media/objectalignment.2c6b2dca.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbdc74be.js",
+    "static/css/2.92224fd0.chunk.css",
+    "static/js/2.f83f761e.chunk.js",
+    "static/css/main.f07ecd74.chunk.css",
+    "static/js/main.f22c9839.chunk.js"
+  ]
+}

@@ -1,0 +1,552 @@
+/*small screen*/
+@media only screen and (max-width: 600px) {
+    .AppChild{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    #MainDiv{
+        height: 50vh !important;
+    }
+
+    .TabDiv{
+        height: 50vh !important;
+        width: 90% !important;
+        /*margin-left: 10% !important;*/
+    }
+
+    .MiniDrawerDiv{
+        width: 10% !important;
+    }
+
+    .MenuSvg, .MultiViewSvg,._3dViewSvg, .TabSvg, .ShowSvg, .HideSvg, .TransparencySvg, .View2DSvg, .ViewResetSvg, .HelpSvg, .PrintSvg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .MenuBtn, .MultiViewBtn, ._3dViewBtn, .TabBtn, .ShowBtn, .HideBtn, .TransparencyBtn, .View2DBtn, .ViewResetBtn, .HelpBtn, .PrintBtn{
+        min-width: unset !important;
+    }
+
+    .CompanyLogo{
+        width: 100px !important;
+    }
+
+    #tab-content-1{
+        overflow-y: auto !important;
+        height: 95% !important;
+    }
+
+
+    .dpl-th-vertical{
+        background-color: #00152C !important;
+        color: white !important;
+        font-size: 10px !important;
+        text-align: left !important;
+        /*border: solid 5px #BAD0DB !important;*/
+        border: solid 7px #bad0db !important;
+        border-bottom: none !important;
+        text-transform: none !important;
+        width: 35% !important;
+        padding: 0 5px !important;
+    }
+
+    .dpl-td-vertical{
+        text-align: left !important;
+        width: 65% !important;
+        /*border: solid 5px #BAD0DB !important;*/
+        border: solid 7px #bad0db !important;
+        border-bottom: none !important;
+        font-size: 10px !important;
+        font-weight: 400;
+        color: black !important;
+        background-color: white !important;
+        padding: 0 5px !important;
+    }
+
+    #showTransparent{
+        height: 35px !important;
+    }
+
+    #showTransparent > div{
+        height: 36px !important;
+    }
+
+    .ContextMenuItem{
+        color: #034D79 !important;
+        font-family: 'Open Sans', Arial !important;
+        font-size: 12px !important;
+        min-height: unset !important;
+    }
+
+    .dpl-table > thead > tr > td > pre {
+        font-size: 10px !important;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Open Sans', Arial;
+        padding: 6px 4px;
+    }
+
+    .dpl-table > tbody > tr > td > pre {
+        font-size: 10px !important;
+        color: black;
+    }
+
+    .td-accordian > div{
+        background-color: white !important;
+        border-style: none;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 10px !important;
+    }
+
+    .tab-title{
+        font-size: 10px !important;
+        font-weight: bold !important;
+    }
+
+    .tab-content{
+        padding: 7px !important;
+        border-left: 2.5px white solid;
+        /*height: 88%;*/
+        overflow-y: auto;
+        /*height: auto !important;*/
+    }
+
+    #TabDetails > table{
+        table-layout:fixed !important;
+        width:96% !important;
+    }
+
+    td{
+        overflow-wrap: break-word;
+        font-size: 10px;
+    }
+
+    btn{
+        font-size: 10px;
+    }
+
+    .addCartBtn{
+        color: #ffffff;
+        background-color: #00152C;
+        border: none;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+        font-size: 10px;
+        text-align: center;
+        display: inline-block;
+    }
+    .td-accordian > .content, .td-accordian > .inputNumber {
+        font-size: 10px !important;
+        color: black;
+    }
+}
+
+/*medium screen*/
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .AppChild{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    #MainDiv{
+        height: 50vh !important;
+    }
+
+    .tab-title{
+        font-size: 12px !important;
+        font-weight: bold !important;
+    }
+
+    .TabDiv{
+        height: 50vh !important;
+        width: 90% !important;
+        /*margin-left: 10% !important;*/
+    }
+
+    .MiniDrawerDiv{
+        width: 10% !important;
+    }
+
+    .MenuSvg, .MultiViewSvg,._3dViewSvg, .TabSvg, .ShowSvg, .HideSvg, .TransparencySvg, .View2DSvg, .ViewResetSvg, .HelpSvg, .PrintSvg {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .MenuBtn, .MultiViewBtn, ._3dViewBtn, .TabBtn, .ShowBtn, .HideBtn, .TransparencyBtn, .View2DBtn, .ViewResetBtn, .HelpBtn, .PrintBtn{
+        min-width: unset !important;
+    }
+
+    .CompanyLogo{
+        width: 150px !important;
+    }
+
+    #tab-content-1{
+        overflow-y: auto !important;
+        height: 95% !important;
+    }
+
+
+    .dpl-th-vertical{
+        background-color: #00152C !important;
+        color: white !important;
+        font-size: 12px !important;
+        text-align: left !important;
+        /*border: solid 5px #BAD0DB !important;*/
+        border: solid 7px #bad0db !important;
+        border-bottom: none !important;
+        text-transform: none !important;
+        width: 35% !important;
+        padding: 0 5px !important;
+    }
+
+    .dpl-td-vertical{
+        text-align: left !important;
+        width: 65% !important;
+        /*border: solid 5px #BAD0DB !important;*/
+        border: solid 7px #bad0db !important;
+        border-bottom: none !important;
+        font-size: 12px !important;
+        font-weight: 400;
+        color: black !important;
+        background-color: white !important;
+        padding: 0 5px !important;
+    }
+
+    #showTransparent{
+        height: 40px !important;
+    }
+
+    #showTransparent > div{
+        height: 46px !important;
+    }
+
+    .ContextMenuItem{
+        color: #034D79 !important;
+        font-family: 'Open Sans', Arial !important;
+        font-size: 12px !important;
+        min-height: unset !important;
+    }
+
+    .dpl-table > thead > tr > td > pre {
+        font-size: 12px !important;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Open Sans', Arial;
+        padding: 6px 4px;
+    }
+
+    .dpl-table > tbody > tr > td > pre {
+        font-size: 12px !important;
+        color: black;
+    }
+
+    .td-accordian > div{
+        background-color: white !important;
+        border-style: none;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 12px !important;
+    }
+
+    .tab-content{
+        padding: 7px !important;
+        border-left: 2.5px white solid;
+        /*height: 88%;*/
+        overflow-y: auto;
+        /*height: auto !important;*/
+    }
+
+    #TabDetails > table{
+        table-layout:fixed !important;
+        width:96% !important;
+    }
+
+    td{
+        overflow-wrap: break-word;
+        font-size: 12px;
+    }
+
+    btn{
+        font-size: 12px;
+    }
+
+    .addCartBtn{
+        color: #ffffff;
+        background-color: #00152C !important;
+        border: none;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+    }
+    .td-accordian > .content, .td-accordian > .inputNumber {
+        font-size: 12px !important;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .dpl-th-vertical{
+        background-color: #00152C !important;
+        color: white !important;
+        font-size: 14px !important;
+        text-align: left !important;
+        width: 100px;
+        /*border: solid 5px #BAD0DB !important;*/
+        border: solid 7px #bad0db !important;
+        border-bottom: none !important;
+        text-transform: none !important;
+        width: 25% !important;
+    }
+
+    .dpl-td-vertical{
+        text-align: left !important;
+        /*border: solid 5px #BAD0DB !important;*/
+        border: solid 7px #bad0db !important;
+        border-bottom: none !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        color: black !important;
+        background-color: white !important;
+    }
+
+    .td-accordian > div{
+        background-color: white !important;
+        border-style: none;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 12px !important;
+    }
+
+    #showTransparent > div{
+        height: 61px !important;
+    }
+
+    td{
+        overflow-wrap: break-word;
+    }
+
+    .addCartBtn{
+        color: #ffffff;
+        background-color: #00152C;
+        border: none;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .CompanyLogo {
+        width: 180px !important;
+    }
+    .td-accordian > .content, .td-accordian > .inputNumber {
+        font-size: 14px !important;
+        color: black;
+    }
+}
+.MuiButton-text {
+    padding: 5px !important;
+}
+
+.add_basket.ordered{
+    background-color: green;
+}
+
+.cortona3dsolo-svg {
+    top:0;
+}
+
+.content {
+    overflow: hidden;
+    /*background-color: #f1f1f1;*/
+}
+
+.hiddenColumn{
+    background-color: #BAD0DB !important;
+}
+
+.loadingtitle{
+    color: #034D79;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 36px;
+    text-align: center;
+}
+
+.loading_progress{
+    color: #034D79;
+}
+
+
+
+.inputText, .inputNumber{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border:0px;
+    outline:0px;
+    text-align: center;
+}
+
+.errorClass{
+    /*color: red !important;*/
+}
+
+.lastRow{
+    background-color: #BAD0DB;
+    height: 40px;
+}
+
+.disabledClass{
+    /*background-color: #9d9d9c !important;*/
+    /*color: black;*/
+}
+
+.exclamationMark{
+    font-weight: bold;
+    text-align: left !important;
+    font-size: 20px !important;
+    border: none !important;
+    padding: 0px !important;
+    color: red;
+}
+
+.ref::before{
+    content: "!";
+}
+
+.no-display{
+    display: none !important;
+}
+
+
+
+.hide-header{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.revision-row-title{
+    width: 25% !important;
+    border-bottom: solid 5px #bad0db !important;;
+}
+
+.revision-data{
+    width: 55% !important;
+    border-bottom: solid 5px #bad0db !important;;
+}
+
+.revision-header{
+    border-bottom: solid 7px #bad0db !important;;
+}
+
+.revision-header-hide{
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+.warning-remark > td:nth-child(6) > pre, .warning-remark:hover > td:nth-child(6) > pre{
+    font-weight: bold !important;
+    color: red !important;
+}
+
+.interchangeData{
+    background-color: white !important;
+    border-style: none;
+    padding-left: 5px !important;
+}
+
+.dpl-table > tbody > tr > td > .inputNumber{
+    padding-left: 18px;
+    padding-right: 5px;
+}
+
+.cortona3dsolo-svg{
+    letter-spacing: 0;
+}
+
+.disabled-button{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#btnViewMulti{
+    height: unset !important;
+}
+
+
+/*Text display direction*/
+.rtl {
+    direction: rtl;
+    text-align: right !important;
+    unicode-bidi: bidi-override;
+}
+
+.ltr {
+    direction: ltr;
+    text-align: left !important;
+    unicode-bidi: bidi-override;
+}
+
+.rtl-center, .rtl-center > span {
+    direction: rtl;
+    text-align: center !important;
+    unicode-bidi: bidi-override;
+}
+
+.ltr-center, .ltr-center > span {
+    direction: ltr;
+    text-align: center !important;
+    unicode-bidi: bidi-override;
+}
+
+.logo-right{
+    right: 20px !important;
+}
+
+.logo-left{
+    left: 20px !important;
+    right: unset !important;
+}
+
+
+.TabDiv > div{
+    overflow-y: auto;
+}
+
+
+.dpl-table > tbody > tr > td{
+    /*border-bottom: 1px solid white !important;*/
+    /*border-top: 0 !important;*/
+    /*  background-color: white;*/
+}
+
+#transparentSlider > span:nth-child(1), #transparentSlider > span:nth-child(2){
+    height: 8px !important;
+    border-radius: 4px !important;
+}
+
+#transparentSlider > span:nth-child(4){
+    width: 15px !important;
+    height: 15px !important;
+    margin-top: -4px !important;
+}
+
+#MiniDrawerDiv{
+    overflow-y: auto;
+}
+
+
+
+

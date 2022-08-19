@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="icon" href="res_INEOS_USER_GUIDE/DefaultImages/IneosSiteLogo.svg">
+<title>USER GUIDE</title><script src="res_INEOS_USER_GUIDE/jquery-3.2.1.min.js"></script><link href="res_INEOS_USER_GUIDE/INEOS_USER_GUIDE.css" rel="stylesheet"><script language="javascript">
+                    var resFolder="res_INEOS_USER_GUIDE";
+                    var language_val = "en-GB";
+                    var language_spec = "en";</script><script language="javascript" src="res_INEOS_USER_GUIDE/CollapsibleLists.js"></script><script language="javascript">
+            var openNavBar = false;
+            function menuClick() {
+            toggleNavBar();
+            openNavBar = openNavBar ? false : true;
+            }
+            function toggleNavBar() {
+            if (!openNavBar) {
+            document.getElementById("navigation_fly").className = " ";
+            }
+            else {
+            document.getElementById("navigation_fly").className = "nodisplay";
+            }
+            }
+            $(document).ready(function () {
+            CollapsibleLists.apply();
+            });
+
+            function nextButton(){
+            var html_file = window.location.href.split('.htm')[0].split('/').slice(-1);
+            console.log(html_file)
+            var current_li = document.querySelector('[href^="'+html_file+'"]')
+            console.log(current_li)
+            var current_pageNo = current_li.getAttribute('id');
+            console.log(current_pageNo)
+            var next_Page = "page_" + (parseInt(current_pageNo.split('_').slice(-1))+1);
+            console.log(next_Page)
+            var next_li = document.querySelector('[id^="'+next_Page+'"]')
+            console.log(next_li)
+            if(next_li){
+            window.open(next_li.getAttribute('href'),"_self")
+            }else{
+            window.open('ListOfGraphics.html',"_self")
+            }
+            }
+
+            function backButton(){
+            var html_file = window.location.href.split('.htm')[0].split('/').slice(-1);
+            console.log(html_file)
+            var current_li = document.querySelector('[href^="'+html_file+'"]')
+            console.log(current_li)
+            var current_pageNo = current_li.getAttribute('id');
+            console.log(current_pageNo)
+            var next_Page = "page_" + (parseInt(current_pageNo.split('_').slice(-1))-1);
+            console.log(next_Page)
+            var next_li = document.querySelector('[id^="'+next_Page+'"]')
+            console.log(next_li)
+            if(next_li){
+            window.open(next_li.getAttribute('href'),"_self")
+            }else{
+            window.open('titlePage.html',"_self")
+            }
+            }
+
+        </script><link rel="stylesheet" type="text/css" href="res_INEOS_USER_GUIDE/CollapsibleLists.css">
+</head>
+<body>
+<div class="container no-panel">
+<div id="solo-svg-holder" class="no-show">
+<div id="title-bar">
+<div class="left">
+<div id="app-figure-title"></div>
+</div>
+<div class="right"><button class="helpButton" title="Help">?</button><button id="button-close" data-link="close" title="Close">×
+                                </button></div>
+</div><svg id="solo-svg"></svg></div>
+<div id="solo-canvas-holder">
+<div id="title-bar">
+<div class="left">
+<div id="app-figure-title1"></div>
+</div>
+<div class="right"><button class="helpButton" title="Help">?</button><button id="button-close-canvas" data-link="close" title="Close">×
+                                </button></div>
+</div>
+<div id="toolbar-range" class="cortona3dsolo-popover"><input id="toolbar-range-input" type="range"><div id="toolbar-range-selection"></div>
+</div>
+<div id="toolbar-buttons" class="cortona3dsolo-popover">
+<div id="toolbar-left-content"><button id="button-playback" title="Play">Play</button><button id="button-stop" title="Stop">Stop</button><button id="button-back" title="Prev">&lt;</button><button id="button-next" title="Next">&gt;</button></div>
+<div id="toolbar-right-content">
+<div class="right"><span id="freeze-viewpoint"><label for="vpfreeze">Freeze Viewpoint:</label><input id="vpfreeze" type="checkbox"></span><span id="procedure-speed"><label for="speed-selector">Speed:</label><select id="speed-selector"><option value="0.5">x1/2</option>
+<option value="1" selected="">x1</option>
+<option value="2">x2</option></select></span></div>
+</div>
+</div><canvas id="solo-canvas"></canvas><div id="eventBox" class="alert-message no-show">
+<div id="alert-message-type" class="alert-message-type">
+<div id="alert-message-frame">
+<div id="alert-message-caption"></div>
+<div id="alert-message-body"></div>
+<div id="alert-message-footer"><button id="button-event">OK</button></div>
+</div>
+</div>
+</div>
+</div>
+<div id="procedure">
+<div id="header">
+<div id="menu_bar"><img id="menu_graphic" src="res_INEOS_USER_GUIDE/menu.png" onclick="menuClick()"></div>
+<div id="navigation_fly" class="nodisplay">
+<ul class="collapsibleList">
+<li><a class="link" href="#X0000002347" id="page_1">Introduction</a></li>
+<li><a class="link" href="#X0000002389" id="page_2">Disclaimer</a></li>
+<li><a class="link" href="#X0000002481" id="page_3">©Copyright</a></li>
+<li><a class="link" href="#X0000000574" id="page_4">Information Tabs</a></li>
+<li><a class="link" href="#X0000000600" id="page_5">Parts Tab</a></li>
+<li><a class="link" href="#X0000000601" id="page_6">Details Tab</a></li>
+<li><a class="link" href="#X0000000606" id="page_7">3D Model Control</a></li>
+<li><a class="link" href="#X0000000610" id="page_8">Three Lines Icon</a></li>
+<li><a class="link" href="#X0000002331" id="page_9">Location View</a></li>
+<li><a class="link" href="#X0000002332" id="page_10">Assembled View</a></li>
+<li><a class="link" href="#X0000002333" id="page_11">Exploded View</a></li>
+<li><a class="link" href="#X0000000611" id="page_12">Model Viewpoint</a></li>
+<li><a class="link" href="#X0000000612" id="page_13">Model Tools</a></li>
+<li><a class="link" href="#X0000000613" id="page_14">Set Centre</a></li>
+<li><a class="link" href="#X0000000614" id="page_15">Show Horizon Centre</a></li>
+<li><a class="link" href="#X0000000615" id="page_16">Full Screen- Remove Task Bars</a></li>
+<li><a class="link" href="#X0000000616" id="page_17">Align Horizon</a></li>
+<li><a class="link" href="#X0000000617" id="page_18">Full Screen - 3D Model</a></li>
+<li><a class="link" href="#X0000000618" id="page_19">Part Visibility</a></li>
+<li><a class="link" href="#X0000000619" id="page_20">Transparency Slider</a></li>
+<li><a class="link" href="#X0000000620" id="page_21">Show 2D</a></li>
+<li><a class="link" href="#X0000000663" id="page_22">Reset View</a></li>
+<li><a class="link" href="#X0000000622" id="page_23">Print Preview</a></li>
+<li><a class="link" href="#X0000001926" id="page_24">Right Click Menu</a></li>
+</ul>
+</div>
+<div class="header-title">
+<h1 class="title">USER GUIDE</h1>
+</div>
+</div>
+<div id="procedure-holder"><!--test bookmap--><!--test chapter--><!--test map--><!--test topicref-->
+<div class="topicDiv" id="X0000002347">
+
+
+
+<div class="topicTitle">
+<h1>Introduction</h1>
+</div>
+
+<div class="section">
+<p>The following User Guide aims to explain how to use the features included in this Technical Publication.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000002389">
+
+
+
+<div class="topicTitle">
+<h1>Disclaimer</h1>
+</div>
+
+<div class="section">
+<p>This Parts Catalogue was correct at the time of publishing. However, INEOS reserves the right to develop, improve and change any equipment, software, specifications, design, and/or information provided without notice or obligation. INEOS will not be held responsible for any inaccuracy or the consequences thereof.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000002481">
+
+
+
+<div class="topicTitle">
+<h1>©Copyright</h1>
+</div>
+
+<div class="section">
+<p>© Copyright INEOS Automotive Limited, 2022. All Rights Reserved. These technical publications are provided for use by authorised users only. Under no circumstances should the content of any of the technical publications be reproduced, stored in a retrieval system or transmitted, in any form, electronic, mechanical, photocopying, recording or other means without prior written permission from INEOS Automotive Limited.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000574">
+
+
+
+<div class="topicTitle">
+<h1>Information Tabs</h1>
+</div>
+
+<div class="section">
+<p>The tabs at the top right-hand side of the screen allow different information to be viewed about the current topic. </p>
+<p>The active tab is highlighted dark blue.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000193" src="001$graphics_00000000091351am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000600">
+
+
+
+<div class="topicTitle">
+<h1>Parts Tab</h1>
+</div>
+
+<div class="section">
+<p>
+                The Parts Tab shows a table of Information relevant to the current area of the vehicle being viewed:
+                <div class="list">
+<ol>
+<div class="li"><!---->
+<div class="liNumber">1.</div>
+<div class="liBody">
+<p>Item Numbers for 2D Drawing</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">2.</div>
+<div class="liBody">
+<p>Service Part Number</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">3.</div>
+<div class="liBody">
+<p>Service Description</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">4.</div>
+<div class="liBody">
+<p>Quantity</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">5.</div>
+<div class="liBody">
+<p> Remarks</p>
+</div>
+</div>
+</ol>
+</div> </p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000235" src="001$graphics_00000000092101am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Clicking on any row of the table will highlight that part on the 3D Model.</p>
+<p>If no 3D model is available, but a 2D image is, then clicking the table row  will open the 2D image.</p>
+<p>Moving the mouse point over a table row without clicking on it will highlight it in blue.</p>
+<p>The table row will change to a sand colour and remain this colour when selected by clicking on it.</p>
+<p>Clicking on a Part on the 3D Model will highlight the corresponding row on the table.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000236" src="001$graphics_00000000092131am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>
+                Selecting the small arrow next to each table row will open a small sub table of information relevant to that part. This includes:
+                <div class="list">
+<ol>
+<div class="li"><!---->
+<div class="liNumber">1.</div>
+<div class="liBody">
+<p>Order Quantity – Changed by the user to meet the required number</p>
+</div>
+</div>
+</ol>
+</div> </p>
+<p>At the bottom of this sub-table is the Add to Order button. Clicking this adds the selected order quantity to the user’s basket.</p>
+<p>The table will show Interchangeability information, but only when there is information available. If there is no interchangeability information, this section will not be displayed</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000856" src="001$graphics_00000000237921am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000601">
+
+
+
+<div class="topicTitle">
+<h1>Details Tab</h1>
+</div>
+
+<div class="section">
+<p>The Details Tab shows a table of applicable vehicle, market and document information, to the current topic being viewed.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000868" src="001$graphics_00000000237951am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<div class="list">
+<ol>
+<div class="li"><!---->
+<div class="liNumber">1.</div>
+<div class="liBody">
+<p>Title of the  document.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">2.</div>
+<div class="liBody">
+<p>Applicable section of the vehicle. I.e. powertrain, body, electrical.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">3.</div>
+<div class="liBody">
+<p>Reference number of the document.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">4.</div>
+<div class="liBody">
+<p>Vehicle model.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">5.</div>
+<div class="liBody">
+<p>Model year or range.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">6.</div>
+<div class="liBody">
+<p>Engine variant.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">7.</div>
+<div class="liBody">
+<p>Transmission variant.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">8.</div>
+<div class="liBody">
+<p>If the document relates to Left Hand Drive (LHD) or Right Hand Drive (RHD) variant.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">9.</div>
+<div class="liBody">
+<p>Applicable body type variant. I.e. LWB SW, XLWB PU.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">10.</div>
+<div class="liBody">
+<p>Applicable region.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">11.</div>
+<div class="liBody">
+<p>First applicable VIN</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">12.</div>
+<div class="liBody">
+<p>Last applicable VIN</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">13.</div>
+<div class="liBody">
+<p>Current version, along with date and reason for previous document revisions.</p>
+</div>
+</div>
+</ol>
+</div>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000869" src="001$graphics_00000000237981am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000606">
+
+
+
+<div class="topicTitle">
+<h1>3D Model Control</h1>
+</div>
+
+<div class="section">
+<p>The 3D Model can be controlled using the mouse.</p>
+<p>The Model can be rotated freely 360° by clicking and holding the left-hand mouse button and moving the mouse to get the desired view.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000212" src="001$graphics_00000000091681am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Using the scroll wheel on the mouse allows the view to be zoomed in or out.</p>
+<p>Clicking and holding the scroll wheel allows the model to be dragged.</p>
+<p>Clicking on a part will highlight that part in a different colour.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000610">
+
+
+
+<div class="topicTitle">
+<h1>Three Lines Icon</h1>
+</div>
+
+<div class="section">
+<p>Selecting this icon opens a menu with the different view options for the selected topic. These are:</p>
+<div class="list">
+<ul>
+<div class="li"><!---->
+<div class="liNumber">&gt;</div>
+<div class="liBody">
+<p>Location View</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">&gt;</div>
+<div class="liBody">
+<p>Assembled View</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">&gt;</div>
+<div class="liBody">
+<p>Exploded View</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">&gt;</div>
+<div class="liBody">
+<p>2D View</p>
+</div>
+</div>
+</ul>
+</div>
+<p>Location View, Assembled View and Exploded View apply only to 3D models. 2D View will be displayed only when there is no 3D model and will not be clickable.</p>
+<p>3D models will always have an Assembled View. The topic may only have this one view, or it may have an Assembled and an Exploded View, an Assembled and a Location View, or all three views.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000835" src="001$graphics_00000000205561am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000002331">
+
+
+
+<div class="topicTitle">
+<h1>Location View</h1>
+</div>
+
+<div class="section">
+<p>The Location View shows parts for the selected topic in the position they are used.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000836" src="001$graphics_00000000205591am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000002332">
+
+
+
+<div class="topicTitle">
+<h1>Assembled View</h1>
+</div>
+
+<div class="section">
+<p>The Assembled View shows a close up view of the part or assembly in the selected topic.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000837" src="001$graphics_00000000205621am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Some larger part Assemblies are made up of smaller Sub-Assemblies. There are also Assembled Views for each of theses Sub-Assemblies.</p>
+<p>Selecting an Assembled View for a Sub-Assembly also filters the Parts Table from all available parts for the section, to just the components of that Sub-Assembly.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000838" src="001$graphics_00000000205651am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000002333">
+
+
+
+<div class="topicTitle">
+<h1>Exploded View</h1>
+</div>
+
+<div class="section">
+<p>Where applicable, the exploded view gives a clearer perspective of the parts within an assembly or sub-assembly.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000839" src="001$graphics_00000000205681am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000611">
+
+
+
+<div class="topicTitle">
+<h1>Model Viewpoint</h1>
+</div>
+
+<div class="section">
+<p>A preset view can be selected using the  solid cube icon on the upper left-hand side of the 3D Model Pane.</p>
+<p>Clicking the icon opens a menu to show seven different selectable views. The icon turns white and the menu background dark blue once opened.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000213" src="001$graphics_00000000091381am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>When a view is selected, the icon for that view stays highlighted in white.</p>
+<p>Six buttons have a cube outline with one solid face. The solid face represents the view the model will be put into. I.e. top, rear, left-hand side.</p>
+<p>The last button shows three solid faces. This will put this model into an angled perspective using the shared corner as the center point.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000214" src="001$graphics_00000000091411am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Once opened, the menu remains open until the main icon is clicked again which then closes the menu.</p>
+<p>The icon changes back to dark blue on a white background.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000612">
+
+
+
+<div class="topicTitle">
+<h1>Model Tools</h1>
+</div>
+
+<div class="section">
+<p>The cube outline icon on the upper left-hand side of the 3D Model Pane, can be used to change certain parameters relating to the 3D Model.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000241" src="001$graphics_00000000091441am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Clicking the icon turns it white on a dark blue background and opens a menu with four options.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000242" src="001$graphics_00000000091471am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>The menu remains open until the main icon is clicked again to close the menu.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000613">
+
+
+
+<div class="topicTitle">
+<h1>Set Centre</h1>
+</div>
+
+<div class="section">
+<p>The first icon is Set Centre. Click on the icon and then click on the part or area you wish to centre. This then sets that as the centre to transform the model around. </p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000243" src="001$graphics_00000000091711am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000614">
+
+
+
+<div class="topicTitle">
+<h1>Show Horizon Centre</h1>
+</div>
+
+<div class="section">
+<p>The second icon is Show/Hide Horizon Center. Clicking this turns on a set of axes to show where the horizon center is currently set. Clicking it again hides the axes.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000244" src="001$graphics_00000000091741am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000615">
+
+
+
+<div class="topicTitle">
+<h1>Full Screen- Remove Task Bars</h1>
+</div>
+
+<div class="section">
+<p>The third icon is Full Screen. Clicking this removes the task bar and upper menus and fills the space with the topic page.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000245" src="001$graphics_00000000091771am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>To exit Full Screen either click the icon again or press the ESC button on the keyboard.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000616">
+
+
+
+<div class="topicTitle">
+<h1>Align Horizon</h1>
+</div>
+
+<div class="section">
+<p>The fourth icon is Align Horizon. Clicking this aligns the 3D model to the horizon.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000246" src="001$graphics_00000000091801am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000617">
+
+
+
+<div class="topicTitle">
+<h1>Full Screen - 3D Model</h1>
+</div>
+
+<div class="section">
+<p>The white table on a dark blue background icon removes the right-hand text pane from view.</p>
+<p>This makes the left-hand 3D Model pane full screen. The Icon changes to dark blue on a white background when this is active.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000247" src="001$graphics_00000000091831am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Pressing the icon again brings the text pane back into view. The icon changes back to the original colours.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000618">
+
+
+
+<div class="topicTitle">
+<h1>Part Visibility</h1>
+</div>
+
+<div class="section">
+<p>The Eye Icon and Eye with a Line through are used to turn part visibility on and off.</p>
+<p>Click on the part on the model you wish to change. Once this is highlighted, clicking the Eye with a Line through will turn that part visibility to off. The part will remain off until it is either turned back on using the icon, or the animation changes the transparency.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000248" src="001$graphics_00000000091861am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>To get the part back, whilst that part is still selected, click on the Eye Icon which will turn the visibility back on.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000249" src="001$graphics_00000000091891am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000619">
+
+
+
+<div class="topicTitle">
+<h1>Transparency Slider</h1>
+</div>
+
+<div class="section">
+<p>Select the part you want to change the transparency of then click this icon.</p>
+<p>A slider bar will appear which can be moved in two ways.</p>
+<p>One way is to click and hold the slider control and slide this along the bar to the required point.</p>
+<p>The second way is to put the mouse pointer at a point on the bar and click. The slider control will jump to this point.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000250" src="001$graphics_00000000091921am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>With the slider control fully to the left, objects will be fully opaque.</p>
+<p>With the slider control fully to the right, objects will be fully transparent.</p>
+<p>If changing the transparency of multiple items, close the transparency slider before selecting another item.</p>
+<p> This ensures the slider control is in the correct position for both the new item and when returning to a previously changed item.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000620">
+
+
+
+<div class="topicTitle">
+<h1>Show 2D</h1>
+</div>
+
+<div class="section">
+<p>Clicking on the Scene Icon changes the 3D Colour Model to a 2D Line drawing.</p>
+<p>If no 2D Drawing is available, then this Icon will be greyed out and no longer function.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000233" src="001$graphics_00000000091951am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Each Part is given a call out to identify it against the relevant line in the parts table.</p>
+<p>Clicking on a call out will highlight it on the drawing and highlight the corresponding line of the parts table.</p>
+<p>Clicking on a line on the parts table will highlight the corresponding call out on the model.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000234" src="001$graphics_00000000091981am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>In 2D view, if there are multiple instances of a part, only one will be shown. All instances can be seen in the 3D view though.</p>
+<p>Clicking the Scene Icon again changes the image back to the 3D Colour Model.</p>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000663">
+
+
+
+<div class="topicTitle">
+<h1>Reset View</h1>
+</div>
+
+<div class="section">
+<p>The two Arrows in a circle is the Reset View tool.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000255" src="001$graphics_00000000092321am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>Clicking on this icon resets the current to view to focus on the main content of the topic. This can be a single item, or an assembly.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000256" src="001$graphics_00000000092351am.png" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000000622">
+
+
+
+<div class="topicTitle">
+<h1>Print Preview</h1>
+</div>
+
+<div class="section">
+<p>Clicking the icon shaped like a printer will display the default print preview for your system.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000858" src="001$graphics_00000000238011am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+</div>
+
+</div><!--test topicref-->
+<div class="topicDiv" id="X0000001926">
+
+
+
+<div class="topicTitle">
+<h1>Right Click Menu</h1>
+</div>
+
+<div class="section">
+<p>With the mouse pointer over a part in the 3D model, or a table row  on the parts table, clicking the right mouse button brings up a menu.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000989" src="001$graphics_00000000269691am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>This menu contains a selection of functions for quick access. These are:</p>
+<div class="list">
+<ol>
+<div class="li"><!---->
+<div class="liNumber">1.</div>
+<div class="liBody">
+<p>Hide - Hides the part that the mouse pointer was over when the right mouse button was clicked.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">2.</div>
+<div class="liBody">
+<p> Isolate - Hides all parts except for the one that the mouse pointer was over when the right mouse button was clicked</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">3.</div>
+<div class="liBody">
+<p>Show All - Shows all previously hidden parts.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">4.</div>
+<div class="liBody">
+<p>Copy - Copies the part number of the 3D part or parts table row the mouse pointer was over, ready for pasting.</p>
+</div>
+</div>
+<div class="li"><!---->
+<div class="liNumber">5.</div>
+<div class="liBody">
+<p>Pages - The list of pages from the three lines icon menu is displayed. The user can select any one of these to quickly change the displayed page. These options will change based on which pages are available to view in the current topic/catalogue area.</p>
+</div>
+</div>
+</ol>
+</div>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000990" src="001$graphics_00000000269721am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px;
+                margin-right: auto; max-width: 80vw;
+            " width="" height="500"></div>
+<p>The right click menu will only display if the mouse pointer is over the 3D model. It will not display if the mouse pointer is over blank space or if the 2D view is selected.</p>
+</div>
+
+</div>
+</div>
+<div id="footer">
+</div>
+</div>
+</div>
+<link href="res_INEOS_USER_GUIDE/cadit_support_2d.css" rel="stylesheet"><script type="text/javascript" src="res_INEOS_USER_GUIDE/cadit_support_2d.js"></script></body>
+</html>

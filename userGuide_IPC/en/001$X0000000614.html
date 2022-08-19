@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Show Horizon Centre</title><script src="res_INEOS_USER_GUIDE/jquery-3.2.1.min.js"></script><link href="res_INEOS_USER_GUIDE/INEOS_USER_GUIDE.css" rel="stylesheet"><script language="javascript">
+                    var resFolder="res_INEOS_USER_GUIDE";
+                    var language_val = "en-US";
+                    var language_spec = "en";</script><script language="javascript" src="res_INEOS_USER_GUIDE/CollapsibleLists.js"></script><script language="javascript">
+            var openNavBar = false;
+            function menuClick() {
+            toggleNavBar();
+            openNavBar = openNavBar ? false : true;
+            }
+            function toggleNavBar() {
+            if (!openNavBar) {
+            document.getElementById("navigation_fly").className = " ";
+            }
+            else {
+            document.getElementById("navigation_fly").className = "nodisplay";
+            }
+            }
+            $(document).ready(function () {
+            CollapsibleLists.apply();
+            });
+
+            function nextButton(){
+            var html_file = window.location.href.split('.htm')[0].split('/').slice(-1);
+            console.log(html_file)
+            var current_li = document.querySelector('[href^="'+html_file+'"]')
+            console.log(current_li)
+            var current_pageNo = current_li.getAttribute('id');
+            console.log(current_pageNo)
+            var next_Page = "page_" + (parseInt(current_pageNo.split('_').slice(-1))+1);
+            console.log(next_Page)
+            var next_li = document.querySelector('[id^="'+next_Page+'"]')
+            console.log(next_li)
+            if(next_li){
+            window.open(next_li.getAttribute('href'),"_self")
+            }else{
+            window.open('ListOfGraphics.html',"_self")
+            }
+            }
+
+            function backButton(){
+            var html_file = window.location.href.split('.htm')[0].split('/').slice(-1);
+            console.log(html_file)
+            var current_li = document.querySelector('[href^="'+html_file+'"]')
+            console.log(current_li)
+            var current_pageNo = current_li.getAttribute('id');
+            console.log(current_pageNo)
+            var next_Page = "page_" + (parseInt(current_pageNo.split('_').slice(-1))-1);
+            console.log(next_Page)
+            var next_li = document.querySelector('[id^="'+next_Page+'"]')
+            console.log(next_li)
+            if(next_li){
+            window.open(next_li.getAttribute('href'),"_self")
+            }else{
+            window.open('titlePage.html',"_self")
+            }
+            }
+
+        </script><link rel="stylesheet" type="text/css" href="res_INEOS_USER_GUIDE/CollapsibleLists.css">
+</head>
+<body>
+<div class="container no-panel">
+<div id="solo-svg-holder" class="no-show">
+<div id="title-bar">
+<div class="left">
+<div id="app-figure-title"></div>
+</div>
+<div class="right"><button class="helpButton" title="Help">?</button><button id="button-close" data-link="close" title="Close">×
+                                </button></div>
+</div><svg id="solo-svg"></svg></div>
+<div id="solo-canvas-holder">
+<div id="title-bar">
+<div class="left">
+<div id="app-figure-title1"></div>
+</div>
+<div class="right"><button class="helpButton" title="Help">?</button><button id="button-close-canvas" data-link="close" title="Close">×
+                                </button></div>
+</div>
+<div id="toolbar-range" class="cortona3dsolo-popover"><input id="toolbar-range-input" type="range"><div id="toolbar-range-selection"></div>
+</div>
+<div id="toolbar-buttons" class="cortona3dsolo-popover">
+<div id="toolbar-left-content"><button id="button-playback" title="Play">Play</button><button id="button-stop" title="Stop">Stop</button><button id="button-back" title="Prev">&lt;</button><button id="button-next" title="Next">&gt;</button></div>
+<div id="toolbar-right-content">
+<div class="right"><span id="freeze-viewpoint"><label for="vpfreeze">Freeze Viewpoint:</label><input id="vpfreeze" type="checkbox"></span><span id="procedure-speed"><label for="speed-selector">Speed:</label><select id="speed-selector"><option value="0.5">x1/2</option>
+<option value="1" selected="">x1</option>
+<option value="2">x2</option></select></span></div>
+</div>
+</div><canvas id="solo-canvas"></canvas><div id="eventBox" class="alert-message no-show">
+<div id="alert-message-type" class="alert-message-type">
+<div id="alert-message-frame">
+<div id="alert-message-caption"></div>
+<div id="alert-message-body"></div>
+<div id="alert-message-footer"><button id="button-event">OK</button></div>
+</div>
+</div>
+</div>
+</div>
+<div id="procedure">
+<div id="header">
+<div id="menu_bar"><img id="menu_graphic" src="res_INEOS_USER_GUIDE/menu3.png" onclick="menuClick()"></div>
+<div id="navigation_fly" class="nodisplay">
+<ul class="collapsibleList">
+<li><a class="link" href="titlePage.html">Cover Page</a></li>
+<li><a class="link" href="001$X0000000574.html#X0000000574" id="page_1">Information Tabs</a></li>
+<li><a class="link" href="001$X0000000600.html#X0000000600" id="page_2">Parts Tab (IPC)</a></li>
+<li><a class="link" href="001$X0000000601.html#X0000000601" id="page_3">Details Tab</a></li>
+<li><a class="link" href="001$X0000000606.html#X0000000606" id="page_4">3D Model Control</a></li>
+<li><a class="link" href="001$X0000000610.html#X0000000610" id="page_5">Three Lines Icon (IPC)</a></li>
+<li><a class="link" href="001$X0000000611.html#X0000000611" id="page_6">Model Viewpoint</a></li>
+<li><a class="link" href="001$X0000000612.html#X0000000612" id="page_7">Model Tools</a></li>
+<li><a class="link" href="001$X0000000613.html#X0000000613" id="page_8">Set Centre</a></li>
+<li><a class="link" href="001$X0000000614.html#X0000000614" id="page_9">Show Horizon Centre</a></li>
+<li><a class="link" href="001$X0000000615.html#X0000000615" id="page_10">Full Screen- Remove Task Bars</a></li>
+<li><a class="link" href="001$X0000000616.html#X0000000616" id="page_11">Align Horizon</a></li>
+<li><a class="link" href="001$X0000000617.html#X0000000617" id="page_12">Full Screen - 3D Model</a></li>
+<li><a class="link" href="001$X0000000618.html#X0000000618" id="page_13">Part Visibility</a></li>
+<li><a class="link" href="001$X0000000619.html#X0000000619" id="page_14">Transparency Slider</a></li>
+<li><a class="link" href="001$X0000000620.html#X0000000620" id="page_15">Show 2D</a></li>
+<li><a class="link" href="001$X0000000663.html#X0000000663" id="page_16">Reset View (Exc DAO)</a></li>
+<li><a class="link" href="001$X0000000622.html#X0000000622" id="page_17">Print Preview</a></li>
+<li><a class="link" href="001$X0000001926.html#X0000001926" id="page_18">Right Click Menu (IPC)</a></li>
+</ul>
+</div>
+<div class="header-title">
+<h1 class="title">Show Horizon Centre</h1>
+</div>
+</div>
+<div id="procedure-holder">
+<div id="X0000000614">
+
+
+
+
+
+<div class="section">
+<p>The second icon is Show/Hide Horizon Center. Clicking this turns on a set of axes to show where the horizon center is currently set. Clicking it again hides the axes.</p>
+<div class="fig tableDiv" data-title="FIGURE"><img id="GRAPHICS_0000000244" src="001$graphics_00000000091740am.jpg" style="border: 0.75pt solid black; display: block; margin-left: auto; margin-top: 20px; margin-right: auto; width: 90%;" width="" height="500"></div>
+</div>
+
+</div>
+</div>
+<div id="footer">
+</div>
+</div>
+</div>
+<link href="res_INEOS_USER_GUIDE/cadit_support_2d.css" rel="stylesheet"><script type="text/javascript" src="res_INEOS_USER_GUIDE/cadit_support_2d.js"></script></body>
+</html>

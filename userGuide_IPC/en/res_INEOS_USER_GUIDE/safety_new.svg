@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="10.3mm"
+     height="10.3mm" viewBox="0 0 38.9291 38.9291" fill="none" fill-rule="evenodd" stroke-miterlimit="5">
+    <title>Untitled</title>
+    <desc>"Generator:ParallelGraphics Cortona2D","ProfileId:WebCGM""ProfileEd:2.1""ColourClass:colour""Source:Cortona2D
+        Editor Pro 2.2.0.49""Date:20170519"
+    </desc>
+    <rect width="38.9291" height="38.9291" fill="#fff"/>
+    <defs/>
+    <g transform="matrix(3.78641,0,0,3.78641,-0,39)" stroke-width="0.1" stroke-linecap="butt" stroke-linejoin="miter">
+        <path fill="#f00" stroke="#f00" d="M34.393,6.052 L34.314,-4.1302 24.181,6.0038 Z"/>
+        <path stroke="#000"
+              d="M10.253,-10.3 L10.247,-7.5015 M0.049339,-7.4976 L0.048322,-10.25 M10.251,-2.7766 L10.252,-0.024287 M0.05,-2.5 L0.043153,-0 M10.3,-10.245 L7.5077,-10.246 M-9.8953e-08,-10.23 L2.8358,-10.253 M10.3,-0.04408 L7.4643,-0.021554 M2.5,-0.05 L0,-0.050345 M7.5077,-10.246 L0.05,-2.5 M10.247,-7.5015 L2.5,-0.05 M2.8358,-10.253 L0.049339,-7.4976 M7.4643,-0.021554 L10.251,-2.7766"/>
+        <path fill="#f00" stroke="#f00" d="M0.049339,-7.4976 L2.8358,-10.253 0.048329,-10.23 Z"/>
+        <path fill="#f00" stroke="#f00"
+              d="M0.043291,-0.050339 L2.5,-0.05 10.247,-7.5015 10.253,-10.245 7.5077,-10.246 0.05,-2.5 Z"/>
+        <path fill="#f00" stroke="#f00" d="M10.251,-2.7766 L7.4643,-0.021554 10.252,-0.043696 Z"/>
+    </g>
+</svg>
